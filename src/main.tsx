@@ -19,7 +19,7 @@ i18n
           "route.home": "/",
           "route.createaccount": "/registration",
           "route.login": "/login",
-          "route.user.details": "/user/:userId",
+          "route.user.details": "/user/:user",
         },
       },
 
@@ -28,7 +28,7 @@ i18n
           "route.home": "/",
           "route.createaccount": "/rejestracja",
           "route.login": "/logowanie",
-          "route.user.details": "/szczegoly-uzytkownika/:userId",
+          "route.user.details": "/szczegoly-uzytkownika/:user",
         },
       },
     },

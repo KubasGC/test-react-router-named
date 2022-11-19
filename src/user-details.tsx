@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 interface UserDetailsProps {}
 
 const UserDetails: FunctionComponent<UserDetailsProps> = () => {
-  const { userId } = useParams();
-  return <>Szczegóły użytkownika ({userId})</>;
+  const { user } = useParams();
+  return <>Szczegóły użytkownika ({user})</>;
 };
 
 export default UserDetails;

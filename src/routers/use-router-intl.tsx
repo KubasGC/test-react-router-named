@@ -17,10 +17,10 @@ export const IntlRouterProvider = ({ children }: any) => {
       if (data && data.length > 0) {
         let url = t(routeName);
         data.forEach((key) => {
-          url = url.replace(key, args[key]);
+          url = url.replace(":" + key, args[key]);
         });
 
-        return url.replace(":", "");
+        return url;
       }
     }
 

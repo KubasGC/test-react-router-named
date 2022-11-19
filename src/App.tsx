@@ -46,9 +46,9 @@ function App() {
           </Link>
         </p>
         <p>
-          <Link to={getRoute(RouteName.UserDetails, { userId: "123" })}>
+          <Link to={getRoute(RouteName.UserDetails, { user: "123-Kubas" })}>
             Szczegóły użytkownika (
-            {getRoute(RouteName.UserDetails, { userId: "123" })})
+            {getRoute(RouteName.UserDetails, { user: "123-Kubas" })})
           </Link>
         </p>
         <p>
