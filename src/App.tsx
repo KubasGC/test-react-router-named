@@ -5,11 +5,10 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { RouteName } from "./routers/router-helper";
 import { useIntlRouter } from "./routers/use-router-intl";
+import IntlLink from "./routers/intl-link";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const { t, i18n } = useTranslation("routes");
+  const { i18n } = useTranslation("routes");
 
   const onLanguageChange = () => {
     const lang = i18n.language;
@@ -36,20 +35,20 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <p>
-          <Link to={getRoute(RouteName.Login)}>
+          <IntlLink to={RouteName.Login}>
             Logowanie ({getRoute(RouteName.Login)})
-          </Link>
+          </IntlLink>
         </p>
         <p>
-          <Link to={getRoute(RouteName.CreateAccount)}>
+          <IntlLink to={RouteName.CreateAccount}>
             Rejestracja ({getRoute(RouteName.CreateAccount)})
-          </Link>
+          </IntlLink>
         </p>
         <p>
-          <Link to={getRoute(RouteName.UserDetails, { user: "123-Kubas" })}>
+          <IntlLink to={RouteName.UserDetails} args={{ user: "123-Kubas" }}>
             Szczegóły użytkownika (
             {getRoute(RouteName.UserDetails, { user: "123-Kubas" })})
-          </Link>
+          </IntlLink>
         </p>
         <p>
           <button onClick={onLanguageChange}>Zmień język</button>
