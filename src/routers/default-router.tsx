@@ -1,5 +1,4 @@
-import { FunctionComponent, useMemo } from "react";
-import { useTranslation } from "react-i18next";
+import { FunctionComponent } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "../App";
 import UserDetails from "../user-details";

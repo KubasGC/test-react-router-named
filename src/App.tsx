@@ -1,8 +1,6 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { RouteName } from "./routers/router-helper";
 import { useIntlRouter } from "./routers/use-router-intl";
 import IntlLink from "./routers/intl-link";
